@@ -4,7 +4,7 @@
   <title><![CDATA[roelbondoc(TIL)]]></title>
   <link href="http://roelbondoc.com/atom.xml" rel="self"/>
   <link href="http://roelbondoc.com/"/>
-  <updated>2011-11-23T23:59:06-05:00</updated>
+  <updated>2011-12-06T11:29:30-05:00</updated>
   <id>http://roelbondoc.com/</id>
   <author>
     <name><![CDATA[Roel]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[TIL virtualbox has port forwarding options]]></title>
+    <link href="http://roelbondoc.com/blog/2011/12/06/til-virtualbox-has-port-forwarding-options/"/>
+    <updated>2011-12-06T11:27:00-05:00</updated>
+    <id>http://roelbondoc.com/blog/2011/12/06/til-virtualbox-has-port-forwarding-options</id>
+    <content type="html"><![CDATA[<p>While attempting to debug ntp issues with a ubuntu host, I found out you can set port forwarding rules between the host and guest machines! This makes things much easier than my old method of creating ssh tunnels to do the work.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TIL You can create routes with '*path']]></title>
