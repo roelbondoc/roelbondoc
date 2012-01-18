@@ -1,29 +1,15 @@
 ---
 layout: default
+title: Roel Bondoc
 ---
-
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
+<div class="step" data-x="2500" data-y="2500" data-rotate="0" data-scale="10">
+  <h3>Roel Bondoc</h3>
+  <p>A ruby on rails developer who puts care and pride into every line of code.</p>
 </div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+
+{% for post in site.posts %}
+<div class="step" data-x="{{ forloop.index | times:1200 }}" data-y="-2500" data-rotate="-90" data-scale="2">
+  <h3>{{ post.title }}</h3>
+  {{ post.content }}
+</div>
+{% endfor %}
