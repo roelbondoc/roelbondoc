@@ -72,3 +72,7 @@ table {
 .step p {
   font-size: 22px;
 }
+
+.step p.small {
+  font-size: 12px;
+}
